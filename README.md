@@ -193,5 +193,4 @@ npm run dev
   Ensure you have created `backend/.env` with your actual AuraDB credentials. Click the **"DBMS Info"** button in the top navigation bar to test your connection at any time.
 - **Connection Timed Out:**
   Ensure your IP address is allowed in Neo4j AuraDB (AuraDB permits connections from all IPs `0.0.0.0/0` by default unless IP whitelisting is enabled).
-- **Driver Integer Serialization:**
   All integers returned by the official Neo4j driver are converted into native JavaScript numbers via `cypherUtils.toNative()` to prevent `{ low, high }` formatting errors.
