@@ -179,11 +179,16 @@ npm run dev
 - Toggle **"Low Stock Only"** to view resources needing replenishment.
 - Click **"Update Stock"** to modify the quantity directly in Neo4j.
 
-### 7. Interactive Graph Explorer
-- View full topological representation of nodes and relationships rendered with Cytoscape.js.
-- Toggle entity labels on/off (`ROLE`, `USER`, `LOCATION`, `DISASTER`, `EMERGENCY_REQUEST`, `VOLUNTEER`, `ASSIGNMENT`, `RESOURCE`, `INVENTORY`).
-- Change layout algorithms: *Force-Directed (CoSE)*, *Concentric*, *Circular*, *Hierarchical Tree*, or *Grid*.
-- Click any node or edge to inspect its labels, ID, and raw properties in the inspector panel.
+### ### 7. Interactive Graph Explorer
 
+The Interactive Graph Explorer provides a visual representation of ResQNet's graph database using Cytoscape.js. It allows administrators to explore relationships between entities and understand how disaster-response operations are connected.
+
+- **Graph Visualization:** Display nodes and relationships connecting users, locations, disasters, emergency requests, volunteers, assignments, resources, and inventory.
+- **Entity Filtering:** Toggle individual entity labels (`ROLE`, `USER`, `LOCATION`, `DISASTER`, `EMERGENCY_REQUEST`, `VOLUNTEER`, `ASSIGNMENT`, `RESOURCE`, and `INVENTORY`) to focus on relevant parts of the graph.
+- **Layout Options:** Arrange the graph using Force-Directed (CoSE), Concentric, Circular, Hierarchical Tree, or Grid layouts.
+- **Node and Relationship Inspection:** Select a node or edge to view its entity type, identifier, and stored properties.
+- **Relationship Exploration:** Trace connections such as users submitting emergency requests, requests being linked to disasters, volunteers receiving assignments, and inventory being associated with resources and storage locations.
+
+This feature helps administrators understand the relationships between entities, explore connected operational data, and identify relevant information during disaster-response coordination.
 ---
 
